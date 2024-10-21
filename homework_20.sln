@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.NUnit.Ui.Playwright", "Tests.NUnit.Ui.Playwright\Tests.NUnit.Ui.Playwright.csproj", "{986EBA1D-0B8C-48A5-BE85-7917E5053E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.xUnit.Ui.Playwright", "Tests.xUnit.Ui.Playwright\Tests.xUnit.Ui.Playwright.csproj", "{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{986EBA1D-0B8C-48A5-BE85-7917E5053E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986EBA1D-0B8C-48A5-BE85-7917E5053E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986EBA1D-0B8C-48A5-BE85-7917E5053E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986EBA1D-0B8C-48A5-BE85-7917E5053E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
