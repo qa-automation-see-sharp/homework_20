@@ -1,5 +1,6 @@
 using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
+using NUnit.Framework.Interfaces;
 using static Microsoft.Playwright.Playwright;
 namespace Tests.NUnit.Ui.Playwright.Tests;
 
@@ -90,10 +91,30 @@ public class TextBoxPageTests : PageTest
         });
     }
     
+    [TearDown]
+    public async Task TearDown()
+    {
+        if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+        {
+            await TakeScreenShot();
+        }
+    }
+    
     [OneTimeTearDown]
     public async Task OneTimeTearDown()
     {
         await Page.CloseAsync();
         await Browser.CloseAsync();
+    }
+    
+    private async Task TakeScreenShot()
+    {
+        var currentDirectory = Directory.GetCurrentDirectory();
+        var currentDate = DateTime.Now.ToString("dd-MM-yy");
+        var currentTime = DateTime.Now.ToString("HH-mm-ss");
+        var currentTestFixture = TestContext.CurrentContext.Test.ClassName;
+        var screenShotName = $"{TestContext.CurrentContext.Test.Name}.png";
+        var path = Path.Combine(currentDirectory, currentDate, currentTime, currentTestFixture, screenShotName);
+        await Page.ScreenshotAsync(new PageScreenshotOptions { Path = path });
     }
 }
