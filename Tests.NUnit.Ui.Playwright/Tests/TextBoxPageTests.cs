@@ -14,7 +14,7 @@ public class TextBoxPageTests : PageTest
     [OneTimeSetUp]
     public async Task Setup()
     {
-        using var playwright = await CreateAsync();
+        var playwright = await CreateAsync();
         playwright.Selectors.SetTestIdAttribute("aria-label");
         
         Browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions

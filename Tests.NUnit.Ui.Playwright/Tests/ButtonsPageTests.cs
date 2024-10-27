@@ -5,7 +5,7 @@ using static Microsoft.Playwright.Playwright;
 namespace Tests.NUnit.Ui.Playwright.Tests;
 
 [TestFixture]
-public class ButtonsPageTests: PageTest
+public class ButtonsPageTests //: PageTest
 { private IBrowser Browser { get; set; }
     private IBrowserContext Context { get; set; }
     private IPage Page { get; set; }
@@ -14,7 +14,7 @@ public class ButtonsPageTests: PageTest
     [SetUp]
     public async Task Setup()
     {
-        using var playwright = await CreateAsync();
+        var playwright = await CreateAsync();
         playwright.Selectors.SetTestIdAttribute("aria-label");
         
         Browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions

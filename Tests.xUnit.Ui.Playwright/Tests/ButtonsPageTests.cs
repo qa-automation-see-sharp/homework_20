@@ -11,7 +11,7 @@ namespace Tests.XUnit.Ui.Playwright.Tests
 
         public async Task InitializeAsync()
         {
-            using var playwright = await CreateAsync();
+            var playwright = await CreateAsync();
             playwright.Selectors.SetTestIdAttribute("aria-label");
 
             _browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
