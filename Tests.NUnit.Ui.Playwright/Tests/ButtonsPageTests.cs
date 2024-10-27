@@ -69,8 +69,8 @@ public class ButtonsPageTests //: PageTest
     [Test]
     public async Task ClickButton_ReturnsMessage()
     {
-        await Page.ClickAsync("xpath=/html//button[@id='doubleClickBtn']");
-        var clickMessage = await Page.Locator("xpath=/html//p[@id='dynamicClickMessage']")
+        await Page.ClickAsync("xpath=//button[text()='Click Me']");
+        var clickMessage = await Page.Locator("id=dynamicClickMessage")
             .TextContentAsync();
         
         Assert.That(clickMessage, Is.EqualTo("You have done a dynamic click"));

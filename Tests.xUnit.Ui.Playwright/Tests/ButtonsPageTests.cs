@@ -64,8 +64,8 @@ namespace Tests.XUnit.Ui.Playwright.Tests
         [Fact]
         public async Task ClickButton_ReturnsMessage()
         {
-            await _page.ClickAsync("xpath=/html//button[@id='dynamicClickMessage']");
-            var clickMessage = await _page.Locator("xpath=/html//p[@id='dynamicClickMessage']")
+            await _page.ClickAsync("xpath=//button[text()='Click Me']");
+            var clickMessage = await _page.Locator("id=dynamicClickMessage")
                 .TextContentAsync();
 
             Assert.Equal("You have done a dynamic click", clickMessage);
