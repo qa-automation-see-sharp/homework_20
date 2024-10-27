@@ -46,7 +46,7 @@ namespace Tests.XUnit.Ui.Playwright.Tests
         {
             var textBoxLabelName = await _page.TextContentAsync("#userName-label");
             var textBoxLabelEmail = await _page.TextContentAsync("#userEmail-label");
-            var textBoxLabelCurrentAddress = await _page.TextContentAsync("currentAddress-label");
+            var textBoxLabelCurrentAddress = await _page.TextContentAsync("#currentAddress-label");
             var textBoxLabelPermanentAddress = await _page.TextContentAsync("#permanentAddress-label");
 
             Assert.Equal("Full Name", textBoxLabelName);

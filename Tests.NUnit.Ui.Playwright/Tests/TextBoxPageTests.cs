@@ -51,7 +51,7 @@ public class TextBoxPageTests : PageTest
     {
         var textBoxLabelName = await Page.TextContentAsync("#userName-label");
         var textBoxLabelEmail = await Page.TextContentAsync("#userEmail-label");
-        var textBoxLabelCurrentAddress = await Page.TextContentAsync("currentAddress-label");
+        var textBoxLabelCurrentAddress = await Page.TextContentAsync("#currentAddress-label");
         var textBoxLabelPermanentAddress = await Page.TextContentAsync("#permanentAddress-label");
 
         Assert.Multiple(() =>
