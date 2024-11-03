@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.NUnit.Ui.Playwright", "Tests.NUnit.Ui.Playwright\Tests.NUnit.Ui.Playwright.csproj", "{986EBA1D-0B8C-48A5-BE85-7917E5053E71}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.NUnit.Ui.Playwright", "Tests.NUnit.Ui.Playwright\Tests.NUnit.Ui.Playwright.csproj", "{986EBA1D-0B8C-48A5-BE85-7917E5053E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.xUnit.Ui.Playwright", "Tests.xUnit.Ui.Playwright\Tests.xUnit.Ui.Playwright.csproj", "{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.xUnit.Ui.Playwright", "Tests.xUnit.Ui.Playwright\Tests.xUnit.Ui.Playwright.csproj", "{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,8 @@ Global
 		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3529FA57-0F16-45E6-9FEB-D83ACE82ECC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
